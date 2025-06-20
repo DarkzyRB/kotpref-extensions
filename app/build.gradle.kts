@@ -33,7 +33,7 @@ publishing {
         register<MavenPublication>("release") {
             groupId = "https://github.com/DarkzyRB"
             artifactId = "kotpref-double-extension"
-            version = "1.0.0"
+            version = "1.2.1"
 
             afterEvaluate {
                 from(components["release"])

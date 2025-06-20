@@ -23,3 +23,16 @@ Add JitPack to your `repositories` block:
 repositories {
     maven { url = uri("https://jitpack.io") }
 }
+```
+Then add the dependency:
+
+```kotlin
+dependencies {
+    implementation("com.github.DarkzyRB:DoublePref:1.2.0")
+}
+```
+
+## 🛠 Requirements
+- Kotlin 1.9+
+- Kotpref 2.13.1+
+- Android minSdk 21+
