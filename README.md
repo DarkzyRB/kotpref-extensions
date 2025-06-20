@@ -29,7 +29,7 @@ Then add the dependency:
 
 ```kotlin
 dependencies {
-    implementation("com.github.DarkzyRB:DoublePref:1.2.0")
+    implementation("com.github.DarkzyRB:DoublePref:1.2.1")
 }
 ```
 ---
