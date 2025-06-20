@@ -31,7 +31,7 @@ dependencies {
 publishing {
     publications {
         register<MavenPublication>("release") {
-            groupId = "https://github.com/DarkzyRB"
+            groupId = "com.github.DarkzyRB"
             artifactId = "kotpref-double-extension"
             version = "1.2.1"
 

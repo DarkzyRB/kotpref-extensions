@@ -31,8 +31,41 @@ dependencies {
     implementation("com.github.DarkzyRB:DoublePref:1.2.0")
 }
 ```
+---
+
+## 🚀 Usage
+```kotlin
+object TaxPref : KotprefModel() {
+    var taxRate by doublePref(0.0)
+}
+```
+
+You can also specify a custom key:
+```kotlin
+var taxRate by doublePref(default = 0.12, key = "tax_rate")
+```
+
+---
 
 ## 🛠 Requirements
 - Kotlin 1.9+
 - Kotpref 2.13.1+
 - Android minSdk 21+
+- kotpref 2.13.2+
+
+---
+
+## 📖 How it works
+
+The doublePref() delegate uses a custom DoublePref class that:
+
+- Stores values as String in SharedPreferences.
+- Reads values using .toDoubleOrNull().
+
+This allows accurate representation and retrieval of decimal numbers without floating-point loss.
+
+---
+
+## 📄 License
+
+This project is licensed under the [MIT License](https://opensource.org/licenses/MIT).
