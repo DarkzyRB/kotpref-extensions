@@ -1,6 +1,7 @@
 # KotPref Double Extension
 
-[![](https://jitpack.io/v/TU_GITHUB_USERNAME/kotpref-double-extension.svg)](https://jitpack.io/#TU_GITHUB_USERNAME/kotpref-double-extension)
+[![](https://jitpack.io/v/DarkzyRB/DoublePref.svg)](https://jitpack.io/#DarkzyRB/DoublePref)
+
 
 An extension for [Kotpref](https://github.com/chibatching/Kotpref) that adds support for `Double` types in `SharedPreferences` and enables seamless usage of `Double` properties in `KotprefModel`.
 
