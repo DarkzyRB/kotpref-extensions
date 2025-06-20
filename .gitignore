@@ -10,8 +10,12 @@ local.properties
 
 # --- Gradle ---
 .gradle/
-!gradle-wrapper.jar
-!gradle-wrapper.properties
+
+# Incluir wrapper de Gradle para JitPack
+!gradle/wrapper/gradle-wrapper.jar
+!gradle/wrapper/gradle-wrapper.properties
+!gradlew
+!gradlew.bat
 
 # --- Build artifacts ---
 **/build/
