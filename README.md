@@ -1,69 +1,69 @@
-# KotPref Double Extension
+# KotPref Extensions
 
-[![](https://jitpack.io/v/DarkzyRB/DoublePref.svg)](https://jitpack.io/#DarkzyRB/DoublePref)
+[![](https://jitpack.io/v/darkzyrb/kotpref-extensions.svg)](https://jitpack.io/#darkzyrb/kotpref-extensions)
 
+A collection of lightweight Kotlin extensions for [KotPref](https://github.com/chibatching/Kotpref), enhancing its capabilities with additional data types and reactive support.
 
-An extension for [Kotpref](https://github.com/chibatching/Kotpref) that adds support for `Double` types in `SharedPreferences` and enables seamless usage of `Double` properties in `KotprefModel`.
-
----
-
-## ✨ Features
-
-- Full support for `Double` preferences using Kotlin property delegation.
-- Integrates directly with `KotprefModel`.
-- Stores values as `String` to maintain floating-point precision.
-- Lightweight and easy to use.
+This repository includes modular extensions designed to be used independently or together.
 
 ---
 
-## 🧩 Installation
+## 📦 Available Modules
 
-Add JitPack to your `repositories` block:
+| Module         | Description                                      | Dependency |
+|----------------|--------------------------------------------------|------------|
+| **double-pref** | Adds native `Double` support to `KotprefModel`  | `com.github.darkzyrb.kotpref-extensions:double-pref:1.2.2` |
+| **flow-support** | Enables reactive `Flow<T>` support for KotPref  | `com.github.darkzyrb.kotpref-extensions:flow-support:1.2.2` |
 
-```kotlin
-repositories {
-    maven { url = uri("https://jitpack.io") }
-}
-```
-Then add the dependency:
+> 💡 All modules are available via [JitPack](https://jitpack.io/#DarkzyRB/kotpref-extensions).
 
-```kotlin
-dependencies {
-    implementation("com.github.darkzyrb.kotpref-extensions:double-pref:1.2.1")
-}
-```
 ---
 
-## 🚀 Usage
+## 🛠️ Installation
+
+1. Add JitPack to your root `settings.gradle.kts` or `build.gradle.kts`:
+
 ```kotlin
-object TaxPref : KotprefModel() {
-    var taxRate by doublePref(0.0)
+dependencyResolutionManagement {
+    repositories {
+        google()
+        mavenCentral()
+        maven { url = uri("https://jitpack.io") }
+    }
 }
 ```
 
-You can also specify a custom key:
+2. Add the module(s) you want to your build.gradle.kts:
+
 ```kotlin
-var taxRate by doublePref(default = 0.12, key = "tax_rate")
+implementation("com.github.darkzyrb.kotpref-extensions:double-pref:1.2.2")
+implementation("com.github.darkzyrb.kotpref-extensions:flow-support:1.2.2")
 ```
 
 ---
 
-## 🛠 Requirements
-- Kotlin 1.9+
-- Kotpref 2.13.1+
-- Android minSdk 21+
-- kotpref 2.13.2+
+## 🔧 Kotlin Version Compatibility
+
+These extensions follow semantic versioning:
+
+```css
+A.B.C
+
+A → Project major version  
+B → Compatible KotPref version  
+C → Internal changes or patches
+```
+
+*Example: 1.2.2 is compatible with KotPref v2.x.*
 
 ---
 
-## 📖 How it works
 
-The doublePref() delegate uses a custom DoublePref class that:
+## 🧩 Related Projects
 
-- Stores values as String in SharedPreferences.
-- Reads values using .toDoubleOrNull().
-
-This allows accurate representation and retrieval of decimal numbers without floating-point loss.
+- [KotPref (original library)](https://github.com/chibatching/Kotpref)
+- [double-pref module](https://github.com/darkzyrb/kotpref-extensions/tree/master/double-pref)
+- [flow-support module](https://github.com/darkzyrb/kotpref-extensions/tree/master/flow-support)
 
 ---
 
