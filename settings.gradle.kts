@@ -20,4 +20,4 @@ dependencyResolutionManagement {
 }
 
 rootProject.name = "kotpref-Extensions"
-include(":double-pref")
+include(":double-pref", ":flow-support")

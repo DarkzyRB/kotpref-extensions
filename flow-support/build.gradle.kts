@@ -8,13 +8,14 @@ group = project.findProperty("GROUP_NAME") as String
 version = project.findProperty("VERSION_NAME") as String
 
 android {
-    namespace = "com.kivpson.extensions.kotpref.pref"
+    namespace = "com.kivpson.extensions.kotpref.flow_support"
     compileSdk = 35
 
     defaultConfig {
         minSdk = 24
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles("consumer-rules.pro")
     }
 
     compileOptions {
@@ -35,7 +36,7 @@ publishing {
     publications {
         create<MavenPublication>("release") {
             groupId = project.group.toString()
-            artifactId = "double-pref"
+            artifactId = "flow-support"
             version = project.version.toString()
 
             afterEvaluate {
