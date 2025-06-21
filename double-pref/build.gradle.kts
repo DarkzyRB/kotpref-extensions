@@ -28,14 +28,14 @@ dependencies {
     implementation(libs.kotpref)
 }
 
-group = "com.github.darkzyrb.extensions.kotpref"
+group = "com.github.darkzyrb.kotpref-extensions"
 version = "1.2.1"
 
 publishing {
     publications {
         create<MavenPublication>("release") {
             groupId = project.group.toString()
-            artifactId = "doublepref"
+            artifactId = "double-pref"
             version = project.version.toString()
 
             afterEvaluate {
