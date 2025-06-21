@@ -28,15 +28,15 @@ dependencies {
     implementation(libs.kotpref)
 }
 
-group = "com.github.DarkzyRB.extensions.kotpref"
+group = "com.github.darkzyrb.extensions.kotpref"
 version = "1.2.1"
 
 publishing {
     publications {
-        register<MavenPublication>("release") {
-            groupId = "com.github.DarkzyRB.extensions.kotpref"
-            artifactId = "DoublePref"
-            version = "1.2.1"
+        create<MavenPublication>("release") {
+            groupId = project.group.toString()
+            artifactId = "doublepref"
+            version = project.version.toString()
 
             afterEvaluate {
                 from(components["release"])

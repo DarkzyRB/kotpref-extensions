@@ -19,5 +19,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "Double Pref Extension"
-include(":app")
+rootProject.name = "DoublePref"
+include(":double-pref")
