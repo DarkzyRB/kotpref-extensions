@@ -19,5 +19,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "DoublePref"
+rootProject.name = "kotpref-Extensions"
 include(":double-pref")
