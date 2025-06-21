@@ -61,7 +61,6 @@ C → Internal changes or patches
 
 ## 🧩 Related Projects
 
-- [KotPref (original library)](https://github.com/chibatching/Kotpref)
 - [double-pref module](https://github.com/darkzyrb/kotpref-extensions/tree/master/double-pref)
 - [flow-support module](https://github.com/darkzyrb/kotpref-extensions/tree/master/flow-support)
 
