@@ -59,8 +59,7 @@ implementation("com.github.darkzyrb.kotpref-extensions:flow-support:1.2.2")
 
 ## 📚 Related
 
-- KotPref (main library)
-- DoublePref Extension
+- [double-pref module](https://github.com/darkzyrb/kotpref-extensions/tree/master/double-pref)
 
 ---
 

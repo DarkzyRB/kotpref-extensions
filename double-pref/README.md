@@ -67,6 +67,12 @@ This allows accurate representation and retrieval of decimal numbers without flo
 
 ---
 
+## 🧩 Related Projects
+
+- [flow-support module](https://github.com/darkzyrb/kotpref-extensions/tree/master/flow-support)
+
+---
+
 ## 📄 License
 
 This project is licensed under the [MIT License](https://opensource.org/licenses/MIT).
